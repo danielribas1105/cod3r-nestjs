@@ -1,4 +1,56 @@
-GET http://localhost:3000/app/teste
+
+GET http://localhost:3000/usuario/1
 
 ###
-GET http://localhost:3000/app
+GET http://localhost:3000/usuario
+
+###
+POST http://localhost:3000/usuario
+content-type: application/json
+
+{
+    "nome": "Veronica",
+    "email": "vcarleti@qq.com.br",
+    "senha": "123456"
+}
+
+###
+DELETE http://localhost:3000/usuario/2
+
+###
+PATCH http://localhost:3000/usuario/1
+content-type: application/json
+
+{
+    "nome": "Daniel Ribas",
+    "email": "danielRibas@qq.com.br",
+    "senha": "654321"
+}
+
+//Obras
+
+###
+GET http://localhost:3000/obras
+
+###
+POST http://localhost:3000/obras
+content-type: application/json
+
+{
+    "nome": "Estadio",
+    "tipo": "construção",
+    "endereco": "Rua Qualquer, s/n",
+    "valor": 5200000.00,
+    "status": true
+}
+
+###
+DELETE http://localhost:3000/obras/2
+
+###
+PATCH http://localhost:3000/obras/1
+content-type: application/json
+
+{
+    "valor": 3000000.00
+}

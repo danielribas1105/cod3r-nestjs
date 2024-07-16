@@ -16,3 +16,12 @@ model Usuario {
   email String @unique
   senha String
 }
+
+model Obras {
+  id Int @id @default(autoincrement())
+  nome String
+  tipo String
+  endereco String
+  valor Float
+  status Boolean
+}
